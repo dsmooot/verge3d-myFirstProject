@@ -8,7 +8,7 @@ var REL_URL_PREFIX = 'v3dApp/';
 
 // Load the visual logic .js or .xml file or not. Currently support for the
 // Puzzles Editor is not guaranteed.
-var LOAD_LOGIC_FILES = false;
+var LOAD_LOGIC_FILES = true;
 
 function createApp() {
 

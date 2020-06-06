@@ -1,5 +1,6 @@
 /* __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated */
 
+/* eslint-disable */
 var CONTAINER_ID = 'v3d-container';
 
 // Path to prepend to request URLs for the scene .gltf file and the visual logic

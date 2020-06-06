@@ -1,10 +1,14 @@
 <template>
-  <div :id="containerId">
-    <div
-      id="fullscreen_button"
-      class="fullscreen-button fullscreen-open"
-      title="Toggle fullscreen mode"
-    ></div>
+  <div>
+    <div :id="containerId">
+      <div
+        id="fullscreen_button"
+        class="fullscreen-button fullscreen-open"
+        title="Toggle fullscreen mode"
+      ></div>
+    </div>
+    <div id="hide_button">HIDE</div>
+    <div id="show_button">SHOW</div>
   </div>
 </template>
 

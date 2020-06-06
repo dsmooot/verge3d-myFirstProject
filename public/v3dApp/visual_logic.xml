@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="875" scrolly="430.5" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="875" scrolly="430.5" scale="0.9">
+  <tab name="init" type="InitTab" active="false" scrollx="801" scrolly="430.50000000000006" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="836.9999999999998" scrolly="400.9236864542611" scale="0.8999999999999999">
     <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="|{kbyL8?m#2%ASxc}1-H" x="-930" y="-410">
       <value name="ID">
         <shadow type="text" id="b5|=7cY9HaNP.j]$S(df">
@@ -70,6 +70,42 @@
               </statement>
             </block>
           </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="%mxftW9[^IV8:YkC{HnB" x="-890" y="170">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="gYce8RYn7j0T4safo#:%">
+          <field name="TEXT">hide_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="hide" id="*nP;ulo^.z5$@n@2Fw7m">
+          <value name="VALUE">
+            <block type="groupList" id="uNEYt)8[fSXcjbcH.9Lq">
+              <field name="FIELDNAME">swiss_army_knife_model</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="J}JqH~`8^oa!(i#Z@l4s" x="-890" y="310">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="k|]|ta-}7#t2hgTAB|Q3">
+          <field name="TEXT">show_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="show" id="FM5J[olgcec@h,;E3odX">
+          <value name="VALUE">
+            <block type="groupList" id="C~qK_IlZL/,ct,dE)jGE">
+              <field name="FIELDNAME">swiss_army_knife_model</field>
+            </block>
+          </value>
         </block>
       </statement>
     </block>

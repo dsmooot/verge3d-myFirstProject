@@ -7,8 +7,22 @@
         title="Toggle fullscreen mode"
       ></div>
     </div>
-    <div id="hide_button">HIDE</div>
-    <div id="show_button">SHOW</div>
+    <!-- <div id="hide_button">HIDE</div> -->
+    <!-- <div id="show_button">SHOW</div> -->
+    <div class="left-panel-center">
+      <div id="left_panel" class="left-panel">
+        <div id="fold_knife_button" class="fold-button">Fold</div>
+        <div id="unfold_knife_button" class="unfold-button">Unfold</div>
+        <div id="annotation_knife_button" class="annotation-button">Info</div>
+      </div>
+    </div>
+    <div class="right-panel-center">
+      <div id="right_panel" class="right-panel">
+        <div id="plastic_button" class="plastic-button">blue</div>
+        <div id="carbon_button" class="carbon-button">grey</div>
+        <div id="wood_button" class="wood-button">wood</div>
+      </div>
+    </div>
   </div>
 </template>
 

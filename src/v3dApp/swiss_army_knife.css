@@ -21,16 +21,15 @@ body {
     height: 50px;
     cursor: pointer;
     background-size: 100% 100%;
-    display: none;
     z-index: 1;
 }
 
 .fullscreen-open {
-    background-image: url('media/fullscreen_open.svg');
+    background-color: blue;
 }
 
 .fullscreen-close {
-    background-image: url('media/fullscreen_close.svg');
+    background-color: blue;
 }
 #hide_button{
     position: absolute;
@@ -49,6 +48,247 @@ body {
     height: 100px;
     background-color: blue;
     color: white;
+}
+.unfold-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 1;
+  width: 72px;
+  height: 80px;
+ background-color: blue;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  cursor: pointer;
+}
+
+.fold-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 1;
+  width: 72px;
+  height: 80px;
+  margin-top: 90px;
+background-color: blue;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  cursor: pointer;
+}
+
+.annotation-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 1;
+  width: 72px;
+  height: 80px;
+  margin-top: 180px;
+ background-color: blue;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  cursor: pointer;
+}
+
+.left-panel {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+
+  width: 0px;
+  height: 270px;
+  margin-bottom: -145px;
+  margin-left: 10px;
+
+  color: white;
+  text-align: center;
+}
+
+.left-panel-center {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  display: block;
+  width: 0px;
+  height: 50%;
+}
+
+.right-panel-center {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  width: 0px;
+  height: 50%;
+  margin-right: 100px;
+  padding-right: 0px;
+}
+
+.right-panel {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+
+  width: 0px;
+  height: 270px;
+  margin-bottom: -145px;
+
+  
+  color: white;
+  text-align: center;
+}
+
+.carbon-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 1;
+  width: 72px;
+  height: 80px;
+  background-color: blue;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  cursor: pointer;
+}
+
+.plastic-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 1;
+  width: 72px;
+  height: 80px;
+  margin-top: 90px;
+background-color: blue;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  cursor: pointer;
+}
+
+.wood-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 1;
+  width: 72px;
+  height: 80px;
+  margin-top: 180px;
+ background-color: blue;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .unfold-button {
+    width: 52px;
+    height: 60px;
+  }
+  .fold-button {
+    width: 52px;
+    height: 60px;
+    margin-top: 70px;
+  }
+  .annotation-button {
+    width: 52px;
+    height: 60px;
+    margin-top: 140px;
+  }
+  .left-panel {
+    height: 210px;
+    margin-bottom: -105px;
+  }
+  .right-panel {
+    height: 210px;
+    margin-bottom: -105px;
+  }
+  .carbon-button {
+    width: 52px;
+    height: 60px;
+  }
+  .plastic-button {
+    width: 52px;
+    height: 60px;
+    margin-top: 70px;
+  }
+  .wood-button {
+    width: 52px;
+    height: 60px;
+    margin-top: 140px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .fold-button {
+    margin-top: 0px;
+    margin-left: 70px;
+  }
+  .annotation-button {
+    margin-top: 0px;
+    margin-left: 140px;
+  }
+  .left-panel {
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    width: 210px;
+    height: 10px;
+    margin-right: -105px;
+    margin-bottom: auto;
+    margin-left: auto;
+  }
+  .left-panel-center {
+    width: 50%;
+    height: 0px;
+    margin-top: 10px;
+  }
+  .right-panel-center {
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    width: 50%;
+    height: 0px;
+    margin-right: 0px;
+    margin-bottom: 70px;
+  }
+  .right-panel {
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 210px;
+    height: 0px;
+    margin-right: -105px;
+  }
+  .plastic-button {
+    margin-top: 0px;
+    margin-left: 70px;
+  }
+  .wood-button {
+    margin-top: 0px;
+    margin-left: 140px;
+  }
 }
 
 /* removes tap blinking on ios devices */

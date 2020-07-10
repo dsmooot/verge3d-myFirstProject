@@ -1,7 +1,18 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="801" scrolly="430.50000000000006" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="836.9999999999998" scrolly="400.9236864542611" scale="0.8999999999999999">
-    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="|{kbyL8?m#2%ASxc}1-H" x="-930" y="-410">
+  <tab name="main" type="MainTab" active="true" scrollx="828.9503117905979" scrolly="14.885591964900868" scale="0.5525219281866826">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="FiE*dD1oJ=07(V,9xAjW" type="">unfolded_knife</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="k1aIdaV9bK]La?[Qta`N" x="-870" y="-410">
+      <field name="VAR" id="FiE*dD1oJ=07(V,9xAjW">unfolded_knife</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="Pl5h,?4yrb6F+p9b%@bN">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimer" id="|{kbyL8?m#2%ASxc}1-H" x="-930" y="-310">
       <value name="ID">
         <shadow type="text" id="b5|=7cY9HaNP.j]$S(df">
           <field name="TEXT">myTimer</field>
@@ -27,53 +38,199 @@
           </value>
         </block>
       </statement>
+      <next>
+        <block type="whenClicked" id="S4/u8pjo_792-TVLB27.">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+          <value name="VALUE">
+            <block type="allObjectList" id="+!4,FGqo6@LAZ$S:*((Z"/>
+          </value>
+          <statement name="DO">
+            <block type="autoRotateCamera" id="~6qG1-ll$7S.B:vg*i@.">
+              <field name="ON_OFF">OFF</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="UvGU%Q|~aN3@*m?-R/!h">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setTimer" id="Ua_;sC!gFm5.t`E7}Wfi">
+                  <value name="ID">
+                    <shadow type="text" id="?cDIjxIbbKD~!{y?m1PE">
+                      <field name="TEXT">myTimer</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="M{_r%6Y-ynxEzY#IZ/CU">
+                      <field name="NUM">10</field>
+                    </shadow>
+                  </value>
+                  <value name="REPEAT">
+                    <shadow type="math_number" id="m!%w|*?e~Xz;4t)d4qks">
+                      <field name="NUM">Infinity</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="autoRotateCamera" id="uZSRAZ@FSp4ZW*WU.`y)">
+                      <field name="ON_OFF">ON</field>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="eBCM4C-/WXd%P]2*mgsf">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="S4/u8pjo_792-TVLB27." x="-890" y="-150">
-      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+    <block xmlns="https://developers.google.com/blockly/xml" type="volume" id="5NCaXJ_3kNpX5hwBiYV4" x="-930" y="-10">
       <value name="VALUE">
-        <block type="allObjectList" id="+!4,FGqo6@LAZ$S:*((Z"/>
-      </value>
-      <statement name="DO">
-        <block type="autoRotateCamera" id="~6qG1-ll$7S.B:vg*i@.">
-          <field name="ON_OFF">OFF</field>
-          <value name="SPEED">
-            <shadow type="math_number" id="UvGU%Q|~aN3@*m?-R/!h">
-              <field name="NUM">2</field>
+        <block type="loadSoundAdv" id="1bYu%c6IUfFqMY8=#qpX">
+          <value name="URL">
+            <shadow type="text" id="e4J,(^YpR8l%5!Q.+)4j">
+              <field name="TEXT">./sounds/fold.mp3</field>
             </shadow>
           </value>
-          <next>
-            <block type="setTimer" id="Ua_;sC!gFm5.t`E7}Wfi">
-              <value name="ID">
-                <shadow type="text" id="?cDIjxIbbKD~!{y?m1PE">
-                  <field name="TEXT">myTimer</field>
+        </block>
+      </value>
+      <value name="VOLUME">
+        <shadow type="math_number" id=".p)Y}XAXBS9?c.on0;84">
+          <field name="NUM">0.1</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="volume" id="-63c/LFU1*bbf4FxFQU2">
+          <value name="VALUE">
+            <block type="loadSoundAdv" id="|V(=#9$4dvUb|Js*?r.j">
+              <value name="URL">
+                <shadow type="text" id="*)O=d)lGHK*Zre?q2Z;W">
+                  <field name="TEXT">./sounds/unfold.mp3</field>
                 </shadow>
               </value>
+            </block>
+          </value>
+          <value name="VOLUME">
+            <shadow type="math_number" id="j?T)iVIJS+V#mq/.:-1A">
+              <field name="NUM">0.1</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="0hy|@~]gvKucvF`_J0Ww" x="-890" y="110">
+      <field name="PROPERTY">display</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <block type="text" id="N$DYXQo9l^bsQ=NLuOL6">
+          <field name="TEXT">block</field>
+        </block>
+      </value>
+      <value name="ID">
+        <block type="lists_create_with" id="|we=;!qO9OO:4[6hXQ6|">
+          <mutation items="2"/>
+          <value name="ADD0">
+            <block type="text" id="d~^Dg1oBudSp?Q~$wQMX">
+              <field name="TEXT">left_panel</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="text" id=":N9/`bjF%TWLlfOf6gFU">
+              <field name="TEXT">right_panel</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="%AuuDH}txFZGv71.|hk0" x="-910" y="210">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="cadWpL3cj!Bp7==u~,Ct">
+          <field name="TEXT">unfold_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="t*yj]T;usz~WIRr=s9,k">
+          <value name="IF0">
+            <block type="logic_compare" id="#m*CWpAbSP`b==2_@1A2">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="Etr]4!z+{O]m4l)O?Mf9">
+                  <field name="VAR" id="FiE*dD1oJ=07(V,9xAjW">unfolded_knife</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="mcMwC$zfSJ(LRTdq7P?]">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="playSound" id="iYMXxu*Xy$p]#Awr@?])">
+              <field name="LOOP">FALSE</field>
               <value name="VALUE">
-                <shadow type="math_number" id="M{_r%6Y-ynxEzY#IZ/CU">
-                  <field name="NUM">10</field>
-                </shadow>
-              </value>
-              <value name="REPEAT">
-                <shadow type="math_number" id="m!%w|*?e~Xz;4t)d4qks">
-                  <field name="NUM">Infinity</field>
-                </shadow>
-              </value>
-              <statement name="DO">
-                <block type="autoRotateCamera" id="uZSRAZ@FSp4ZW*WU.`y)">
-                  <field name="ON_OFF">ON</field>
-                  <value name="SPEED">
-                    <shadow type="math_number" id="eBCM4C-/WXd%P]2*mgsf">
-                      <field name="NUM">2</field>
+                <block type="loadSoundAdv" id="Ov}C/jn7yt}Lg1ihYC*V">
+                  <value name="URL">
+                    <shadow type="text" id="Acz2=ssJzPUA2L8v$?(6">
+                      <field name="TEXT">./sounds/fold.mp3</field>
                     </shadow>
                   </value>
                 </block>
-              </statement>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id=")Ab%/m;2zwxR#BXCZ1k+">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <block type="getAnimations" id="xz*}RuN2`RKcl@PABzwy">
+                      <value name="OBJECTINPUT">
+                        <block type="groupList" id="_@y)-!kd4XONrdSqu@9g">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="PY?x.c!f*[{1J5ObhFr|">
+                      <field name="VAR" id="FiE*dD1oJ=07(V,9xAjW">unfolded_knife</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="Ac{c~6c,wLZK(-1(^$@)">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
             </block>
-          </next>
+          </statement>
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="%mxftW9[^IV8:YkC{HnB" x="-890" y="170">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="J}JqH~`8^oa!(i#Z@l4s" disabled="true" x="450" y="270">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="k|]|ta-}7#t2hgTAB|Q3">
+          <field name="TEXT">show_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="show" id="FM5J[olgcec@h,;E3odX">
+          <value name="VALUE">
+            <block type="groupList" id="C~qK_IlZL/,ct,dE)jGE">
+              <field name="FIELDNAME">swiss_army_knife_model</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="%mxftW9[^IV8:YkC{HnB" disabled="true" x="490" y="390">
       <field name="EVENT">click</field>
       <field name="PARENT">TRUE</field>
       <value name="ID">
@@ -91,21 +248,71 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="J}JqH~`8^oa!(i#Z@l4s" x="-890" y="310">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="GTy*SFrh^C,]6YVrOXJF" x="-910" y="510">
       <field name="EVENT">click</field>
-      <field name="PARENT">TRUE</field>
+      <field name="PARENT">FALSE</field>
       <value name="ID">
-        <block type="text" id="k|]|ta-}7#t2hgTAB|Q3">
-          <field name="TEXT">show_button</field>
+        <block type="text" id="io8CmQsJeX)$ufLwC)`@">
+          <field name="TEXT">fold_button</field>
         </block>
       </value>
       <statement name="DO">
-        <block type="show" id="FM5J[olgcec@h,;E3odX">
-          <value name="VALUE">
-            <block type="groupList" id="C~qK_IlZL/,ct,dE)jGE">
-              <field name="FIELDNAME">swiss_army_knife_model</field>
+        <block type="controls_if" id="P_#J|;@0@?7]J6ZJgV-u">
+          <value name="IF0">
+            <block type="logic_compare" id="UGS2Rbx19*zPCBr2!ghP">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="4Op`eypBtDknWR+CmY{k">
+                  <field name="VAR" id="FiE*dD1oJ=07(V,9xAjW">unfolded_knife</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="RV$_y}Mjpt|HQ8(II2jx">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
             </block>
           </value>
+          <statement name="DO0">
+            <block type="playSound" id="ncr/Jl@lr{{5B@))JsWt">
+              <field name="LOOP">FALSE</field>
+              <value name="VALUE">
+                <block type="loadSoundAdv" id="W7vH6K*eEYe^IfDdxxuk">
+                  <value name="URL">
+                    <shadow type="text" id="B8H8VA%Grjb)XE.^L:Sw">
+                      <field name="TEXT">./sounds/unfold.mp3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="1~{lpE?-~M4~O]W-z3jM">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <block type="getAnimations" id="$!xxq4cav[`zaVNLwcr3">
+                      <value name="OBJECTINPUT">
+                        <block type="groupList" id="i,B|]#mP(`aSXo~+EXz5">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="CDT6fti[EOR:l_MdXEdR">
+                      <field name="VAR" id="FiE*dD1oJ=07(V,9xAjW">unfolded_knife</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="H=wsO4)D:.2nn0:l.Y)1">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
         </block>
       </statement>
     </block>

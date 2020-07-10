@@ -11,8 +11,8 @@
     <!-- <div id="show_button">SHOW</div> -->
     <div class="left-panel-center">
       <div id="left_panel" class="left-panel">
-        <div id="fold_knife_button" class="fold-button">Fold</div>
-        <div id="unfold_knife_button" class="unfold-button">Unfold</div>
+        <div id="fold_button" class="fold-button">Fold</div>
+        <div id="unfold_button" class="unfold-button">Unfold</div>
         <div id="annotation_knife_button" class="annotation-button">Info</div>
       </div>
     </div>

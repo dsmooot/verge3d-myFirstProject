@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="801" scrolly="430.50000000000006" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="828.9503117905979" scrolly="14.885591964900868" scale="0.5525219281866826">
+  <tab name="main" type="MainTab" active="true" scrollx="536.9813104671607" scrolly="206.61681269880137" scale="0.5387568978066389">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="FiE*dD1oJ=07(V,9xAjW" type="">unfolded_knife</variable>
     </variables>
@@ -86,6 +86,42 @@
         </block>
       </next>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="y![5rz~j@{)|U{6P@s`l" x="-30" y="-170">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="-]dSEXQ^],!tcyIR:+Js">
+          <field name="TEXT">carbon_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="N^VUtPp|fg~Yw{HGJ6r@">
+          <value name="VALUE2">
+            <block type="materialList" id="^VHsrOdMRC%zh,Zq%lJ]">
+              <field name="FIELDNAME">carbon</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="lists_create_with" id="4H($f?jvpLW)fS-6N@C!">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="objectList" id="{2t5}O/~^vCI.Ui;G8j2">
+                  <field name="FIELDNAME">back_cover</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="$vc%I0%-*u,n9um`@;N^">
+                  <field name="FIELDNAME">front_cover</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="Gjv5)Ll1t6Fxf%bic|ae" x="229" y="-133">
+      <field name="TEXT">carbon_button</field>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="volume" id="5NCaXJ_3kNpX5hwBiYV4" x="-930" y="-10">
       <value name="VALUE">
         <block type="loadSoundAdv" id="1bYu%c6IUfFqMY8=#qpX">
@@ -120,6 +156,39 @@
         </block>
       </next>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="tH~U0#HEl,M*9@^Hke@B" x="-30" y="-10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="K(/UgH]zsuzur1so#ZqZ">
+          <field name="TEXT">wood_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="jI{wf!vTBfaEdGr(a|{8">
+          <value name="VALUE2">
+            <block type="materialList" id="Oo-@py?uk9x[t!nq)-%O">
+              <field name="FIELDNAME">wood</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="lists_create_with" id=";|:E/E?9P)xh{l_`6jP^">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="objectList" id="41EFL4Fnb+(U/-xWmVR0">
+                  <field name="FIELDNAME">back_cover</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="rgIQ`QHOa~v/g@7fa`0~">
+                  <field name="FIELDNAME">front_cover</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemStyle" id="0hy|@~]gvKucvF`_J0Ww" x="-890" y="110">
       <field name="PROPERTY">display</field>
       <field name="PARENT">TRUE</field>
@@ -143,6 +212,39 @@
           </value>
         </block>
       </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="uK3O`H.8:;54_-Dpw$^H" x="-50" y="150">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="g|^1r.*vp?r~_FYsYNTX">
+          <field name="TEXT">plastic_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="a^dGaVSHbRPCUQB[5{NI">
+          <value name="VALUE2">
+            <block type="materialList" id="y`ukWA4G9|IkT^SFD,]E">
+              <field name="FIELDNAME">plastic</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="lists_create_with" id="3%}UbJcB;gQ`}z@}H+O6">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="objectList" id="BAo6(*bL!#27l9=-JSB+">
+                  <field name="FIELDNAME">back_cover</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="pSQ)4yR*;W1^au8CSg${">
+                  <field name="FIELDNAME">front_cover</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="%AuuDH}txFZGv71.|hk0" x="-910" y="210">
       <field name="EVENT">click</field>
